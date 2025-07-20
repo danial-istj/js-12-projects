@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #f4f4f4;
+}
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
