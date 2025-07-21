@@ -13,6 +13,7 @@ body{
     min-width: 100px;
     text-align: center;
     min-height: 100vh;
+    padding: 20px;
 }
 .container{
     background-color: white;
@@ -51,4 +52,28 @@ body{
     margin-top: 10px;
     margin-bottom: 5px;
     transition: background-color 0.3s ease;
+}
+.container button:hover{
+    background-color: #e56550;
+
+}
+
+/* responsive design */
+
+@media (max-width: 500px){
+    /* implement this under and on this width */
+    .container{
+        padding: 15px;
+    }
+    .container h1{
+        font-size: 2rem;
+    }
+    .container p{
+        font-size: 0.5 rem;
+    }
+    .container button{
+        padding: 12px 25px;
+        font-size: 1 rem;
+    }
+
 }
