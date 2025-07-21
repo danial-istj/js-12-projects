@@ -156,3 +156,26 @@ button:hover{
     background-color: #d45b28;
 
 }
+
+/* responsive design */
+
+@media (max-width: 500px){
+    /* implement this under and on this width */
+    .screen{
+        padding: 1rem;
+    }
+    #start-screen h1{
+        font-size: 2rem;
+    }
+    #question-text{
+        font-size: 1.3rem;
+    }
+    .answer-btn{
+        padding: 12px;
+    }
+    .button{
+        padding: 12px 25px;
+        font-size: 1 rem;
+    }
+
+}

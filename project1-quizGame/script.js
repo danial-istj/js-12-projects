@@ -101,7 +101,7 @@ function showQuestion(){
 
     questionText.textContent=currentQuestion.question;
 
-    //explain this in a second
+    //explain 
 
     answersContainer.innerHTML="";
     currentQuestion.answers.forEach(answer=>{
