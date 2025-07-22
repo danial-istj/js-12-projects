@@ -58,7 +58,6 @@ body{
 }
 #generate-btn:active{
     transform: translateY(0);
-
 }
 .palette-container{
     display: grid;
