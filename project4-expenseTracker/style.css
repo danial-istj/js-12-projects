@@ -21,7 +21,7 @@ body{
     background-color: white;
     border-radius: 24px;
     padding: 2rem;
-    box-shadow: 0, 12px, 24px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
 }
 
 h1{
@@ -120,7 +120,7 @@ h2{
     flex-grow: 1;
 }
 
-#traction-list::-webkit-scrollbar{
+#transaction-list::-webkit-scrollbar{
     width: 8px;
 }
 
@@ -149,7 +149,7 @@ h2{
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: all 0.2s;
     border-right: 5px solid;
-    animation: slidIn 0.3s ease;
+    animation: slideIn 0.3s ease;
 }
 
 @keyframes slideIn{
@@ -186,7 +186,7 @@ h2{
     cursor: pointer;
     font-size: 1.4rem;
     opacity: 0;
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
     padding: 4px 8px;
     border-radius: 4px;
     margin-left: 12px;
@@ -282,7 +282,7 @@ button[type="submit"]:active{
     .main-content{
         grid-template-columns: 1fr;
     }
-    #transaxtion-list{
+    #transaction-list{
         max-height: 300px;
     }
 }
@@ -301,7 +301,7 @@ button[type="submit"]:active{
         font-size: 1.5rem;
     }
     .transaction{
-        padding: 14px,16px;
+        padding: 14px 16px;
     }
     h1{
         font-size: 1.8rem;
