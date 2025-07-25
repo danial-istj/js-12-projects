@@ -21,14 +21,14 @@
 
         <div id="profile-container" class="hidden">
             <div class="profile-header">
-                <img src="" alt="Profile avatar">
+                <img src="" alt="Profile avatar" id="avatar">
                 <div class="profile-info">
                     <h2 id="name"></h2>
                     <p id="username"></p>
                     <p id="bio"></p>
                     <div class="location-date">
                         <p><i class="fas fa-map-marker-alt"></i><span id="location">Not specified</span></p>
-                        <p><i class="far fa-calender-alt"></i>Joined<span id="joined-date">Not specified</span></p>                    
+                        <p><i class="far fa-calendar-alt"></i>Joined<span id="joined-date">Not specified</span></p>                    
                     </div>
                     <a id="profile-link" target="_blank" class="btn">View Profile</a>
                 </div>
@@ -58,7 +58,7 @@
             </div>
         </div>
 
-        <div class="error-container hidden">
+        <div class="hidden" id="error-container">
             <p>No user found. Please try another username.</p>
         </div>
 
