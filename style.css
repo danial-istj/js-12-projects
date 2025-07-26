@@ -3,13 +3,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+  --primary-color: #2b5876;
+  --secondary-color: #4e4376;
+}
+
 body{
     display: flex;
     font-family: sans-serif;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #E7F2E4;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     min-width: 100px;
     text-align: center;
     min-height: 100vh;
@@ -18,30 +24,43 @@ body{
 .container{
     background-color: white;
     border-radius: 1rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     width: 100%;
     max-width: 600px;
     overflow: hidden;
     position: relative;
-    padding: 25px;
-    font-style: none;
+    padding: 25px;    
 }
 .container h1{
-    color: #E55050;
-    margin-bottom: 20px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
     font-size: 2.5rem;
-
+    position: relative;
+    padding-bottom: 0.5rem;
 }
-.container a{
+
+h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  border-radius: 2px;
+}
+
+.projects-container{
+    font-size: 2.5rem;
+    display: grid;
+}
+.projects-container a{
     text-decoration: none;
 }
-.container p{
-    color: #666;
-    margin-bottom: 30px;
-    font-size: 1rem;
-}
-.container button{
-    background-color: #E55050;
+
+.projects-container button{
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     color: white;
     border: none;
     border-radius: 10px;
@@ -51,11 +70,16 @@ body{
     width: 100%;
     margin-top: 10px;
     margin-bottom: 5px;
-    transition: background-color 0.3s ease;
-}
-.container button:hover{
-    background-color: #e56550;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(43, 88, 118, 0.2);
 
+}
+.projects-container button:hover{
+    transform: translateY(-2px);
+}
+
+.projects-container button:active{
+    transform: translateY(0px);
 }
 
 /* responsive design */
@@ -68,10 +92,10 @@ body{
     .container h1{
         font-size: 2rem;
     }
-    .container p{
+    .projects-container p{
         font-size: 0.5 rem;
     }
-    .container button{
+    .projects-container button{
         padding: 12px 25px;
         font-size: 1 rem;
     }

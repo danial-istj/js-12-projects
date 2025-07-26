@@ -167,6 +167,6 @@ function formatDate(dateString){
     })
 }
 
-//burakorkmez
+
 searchInput.value="danial-istj";
 searchUser();
